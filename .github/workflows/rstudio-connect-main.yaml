@@ -22,8 +22,8 @@ jobs:
       - name: Publish the app
         uses: rstudio/actions/connect-publish@main
         with:
-          url: https://colorado.rstudio.com/rsc/
-          api-key: ${{ secrets.CONNECT_API_KEY }}
+          url: http://ec2-18-223-119-20.us-east-2.compute.amazonaws.com/rsconnect/
+          api-key: ${{ secrets.COLE_API}}
           access-type: all
           show-logs: true
           # for more on app identifiers or multiple app deployments, see
